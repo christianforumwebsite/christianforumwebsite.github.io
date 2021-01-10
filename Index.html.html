@@ -1,0 +1,264 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Christian Website Forum</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/5c75a8d2c5.js" crossorigin="anonymous"></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "garamond";
+}
+
+/* Style the header */
+#header {
+  background-color: #f1f1f1;
+  padding: 40px;
+  text-align: center;
+  Background-image: url("https://i.pinimg.com/originals/47/e2/25/47e2259bdabafa4605276c0cdc68978c.jpg");
+  animation: animation 100s linear infinite;
+  
+}
+.topnav {
+  color: white;
+  overflow: hidden;
+  background-color: #413F3D;
+ position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  margin:auto;
+  z-index: 1;
+}
+.topnav a {
+color: white;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.topnav a:hover {
+  background-color: #F6F6F2;
+  color: black;
+}
+.column {
+  float: left;
+  padding: 10px;
+}
+.column.side {
+  width: 25%;
+  background-color: #0B0C10;
+}
+.column.middle {
+  width: 50%;
+  border-style: solid;
+  border-color: gray;
+  position: relative;
+  background-color: #C5C6C7;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+.side-buttons:link, .side-buttons:visited {
+  color: white;
+  width: 75%;
+  height: 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin:auto;
+  transition: height 0.5s ease;
+  overflow: hidden;
+  background-color:#1F2833;
+  }
+  .side-buttons:hover, .side-buttons:active {
+  background-color: #1F2833;
+  height: 90px;
+  }
+  #right-side{
+  background-image: url("https://i.pinimg.com/originals/13/46/2e/13462e2274768eca312565cda9de12da.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position:right;
+  }
+  #left-side{
+width: 32%;
+margin:auto;
+position:fixed;
+font-size: 20px;
+animation-delay: .4s;
+  }
+  @media screen and (max-width: 620px) {
+  #left-side{
+  position: static;
+  }
+  }
+  .what-is-this {
+  font-size: 28px;
+  }
+  .form-label{
+  padding: 7px;
+  }
+  #christian-forum{
+  font-size: 60px;
+  }
+  .btn-primary {
+  float: right;
+  }
+  .accordian-item {
+  float:right;
+  }
+  .collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+.footer {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+.what-are-these {
+border: 2px solid black;
+border-radius: 5px;
+width: 350px;
+}
+.fa-cross{
+color: white;
+height: 25px;
+}
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem) scale(.8);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.animate-pop-in {
+  animation: pop-in .6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+  opacity: 0;
+}
+.pictures{
+animation-delay: .9s;
+}
+.what-are-these{
+animation-delay: .5s;
+width: 30%
+}
+.what-is-this{
+animation-delay: .7s;
+width: 100%
+}
+@media only screen and (max-width:620px) {
+#header, .row{
+    width:100%;
+	position: static;
+  }
+}
+.pictures{
+width: 35%;
+}
+@keyframes animation{
+100%{
+background-position: 0px -3000px;
+}
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+  <h1 id="christian-forum" class="christian-forum animate-pop-in"><strong>Christian Forum</strong></h1>
+</div>
+<div class="topnav">
+ <a class="nav-buttons animate-pop-in" href=#header><i class="fas fa-cross"></i> Home</a>
+ <a class="nav-buttons animate-pop-in" href=#help>Help</a>
+</div>
+
+<div class="row">
+  <div class="column side">
+  <div id="left-side" class="left-side animate-pop-in">
+    <a class="side-buttons" href="file:///C:/Users/candr/OneDrive/Documents/Questions%20about%20God%20file.html"><i class="fas fa-question"></i> Questions about God <br>For any questions you may have about God, the Bible, the Holy Spirit... </a>
+	<a class="side-buttons" href="file:///C:/Users/candr/OneDrive/Documents/Inspirational%20Bible%20quote.html"><i class="fas fa-bible"></i> Inspirational Bible quotes<br>Share your favorite Bible verse with us and the community!</a>
+	<a class="side-buttons" href="file:///C:/Users/candr/OneDrive/Documents/Your%20Journey%20with%20God%20fil.html"><i class="fas fa-heart"></i> Your journey with Christ<br>Share your journey thus far and the miracles that you have experienced through Christ!</a>
+	<a class="side-buttons" href="file:///C:/Users/candr/OneDrive/Documents/Share%20a%20prayer%20file.html"><i class="fas fa-praying-hands"></i> Share a prayer<br>Share your prayers and the community will pray for you!</a>
+	</div>
+  </div>
+  
+  <div class="column middle">
+  <h2 class="what-are-these animate-pop-in">What is a forum?</h2>
+  <p class="what-is-this animate-pop-in"> A forum is a place to exchange ideas, or views on a particular topic or issue.</p>
+  <h2 class="what-are-these animate-pop-in"> What exactly is this about?</h2>
+  <img class="pictures animate-pop-in" src="https://www.shambhala.com/wp/wp-content/uploads/2017/01/iStock-502555742-345x230.jpg" alt="Picture of a cross over a horizon" >
+  <p class="what-is-this animate-pop-in">Hi and welcome to my website! This forum focuses on Christianity and is available for Christians and non-Christians alike to learn more about God and talk about their experiences with Jesus. It doesn't matter who you are, everyone is welcome, whether you are just curious or sharing your story. If you ever feel too shy to share anything, you are obviously not obliged to share it, but I would like to remind you that this is kept completely anonymous. Thank you for using my site! God bless you all. </p>
+<h2 id="about-me" class="what-are-these animate-pop-in">About the creators</h2>
+<img class="pictures animate-pop-in" src="https://www.rnz.co.nz/assets/news_crops/33149/eight_col_12501924_l.jpg?1493791427" alt="a bible and a cross" height= 200px>
+<p class="what-is-this animate-pop-in">Hi! We are two High School seniors that decided to test our coding skills out to create a personal project together. We knew there was no better way to start than to make a website honoring Christianity and God. This website is a personal project and something that we hope can be useful to young Christians(or older) as well as anyone interested in Christianity, or anyone that may have any questions about it. Thank you for using our website and have a wonderful day! God bless you all.</p>
+<h2 id="help" class="what-are-these animate-pop-in">Need help?</h2>
+<p>For any questions or other inquiries about me or my website, please contact me using my email address, <a href="mailto:christianforumwebsite@gmail.com">christianforumwebsite@gmail.com</a>. I will do my best to help you and answer any questions you may have. Thank you!</p>
+  </div>
+  <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+define('ALLOW_UNFILTERED_UPLOADS', true);
+</script>
+  <div class="column side" id="right-side">
+ 
+  </div>
+</div>
+  <div class="footer">
+  <p>&copy; Copyright 2020<br> Christian Diaz Herrera • Kiera Cawley</p>
+</div>
+</body>
+</html>
